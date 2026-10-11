@@ -1,0 +1,13 @@
+{
+  "name": "smefi",
+  "image": "mcr.microsoft.com/devcontainers/python:3.12",
+  "features": {
+    "ghcr.io/devcontainers/features/aws-cli:1": {},
+    "ghcr.io/devcontainers/features/terraform:1": {}
+  },
+  "customizations": {
+    "vscode": {
+      "extensions": ["charliermarsh.ruff", "hashicorp.terraform", "ms-toolsai.jupyter"]
+    }
+  }
+}
