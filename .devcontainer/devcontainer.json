@@ -5,6 +5,12 @@
     "ghcr.io/devcontainers/features/aws-cli:1": {},
     "ghcr.io/devcontainers/features/terraform:1": {}
   },
+
+  "containerEnv": {
+        "AWS_CLI_AUTO_PROMPT": "on-partial"
+    },
+    
+  "postCreateCommand": "sudo apt-get update && sudo apt-get install -y tree",
   "customizations": {
     "vscode": {
       "extensions": ["charliermarsh.ruff", "hashicorp.terraform", "ms-toolsai.jupyter"]
