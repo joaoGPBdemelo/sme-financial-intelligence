@@ -12,10 +12,10 @@
         "AWS_PROFILE": "smefi"
     },
 
-  "postCreateCommand":"sudo apt-get update && sudo apt-get install -y tree && pip install -e '.[dev]' && pre-commit install",
+  "postCreateCommand": "pip install -e '.[dev]' && pre-commit install",
   "customizations": {
     "vscode": {
-      "extensions": ["charliermarsh.ruff", "hashicorp.terraform", "ms-toolsai.jupyter"]
+      "extensions": ["charliermarsh.ruff", "hashicorp.terraform", "ms-toolsai.jupyter", "redhat.vscode-xml"]
     }
   }
 }
